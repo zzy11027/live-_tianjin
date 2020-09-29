@@ -115,6 +115,10 @@ export default {
 	},
 	mounted() {},
 	methods: {
+		/* 
+			点赞接口
+			调取百度接口，增加点赞次数
+		*/
 		voteClick(event, index, type, item) {
 			// const buttonDom = this.$refs[type][index];
 			// buttonDom.src = require(`../assets/images/already1.png`);

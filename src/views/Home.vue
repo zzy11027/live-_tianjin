@@ -79,6 +79,10 @@ export default {
 		Talent
 	},
 	created() {
+		/* 
+		  调取百度接口数据
+		  每五秒钟查询一次
+		*/
 		this.getData();
 		setInterval(() => {
 			this.getData();
@@ -176,6 +180,9 @@ export default {
 		close() {
 			this.isPopup = false;
 		},
+		/* 
+			微信分享
+		*/
 		wxshare(e) {
 			this.wxConfig.wxShowMenu({
 				titles: '宝藏天津  嘛都开心。',
