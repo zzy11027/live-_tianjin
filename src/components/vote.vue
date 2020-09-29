@@ -137,6 +137,7 @@ export default {
 						//new一个新对象，赋值给arrTime并记录到缓存中
 						const objTime = new Object();
 						objTime.nowTime = new Date().getTime();
+
 						objTime.time = 600000; //缓存有效期10分钟
 						objTime.type = item.anchorId;
 						objTime.state = 0;
